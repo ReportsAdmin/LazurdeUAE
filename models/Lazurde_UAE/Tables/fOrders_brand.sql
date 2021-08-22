@@ -17,7 +17,7 @@ select ad_cat_id,checkout_type,lower(coupon_code)coupon_code,currency_iso,is_ad_
 
 
 from(
-select cast(product_id as string) product_id,variantid,'Lazurde_Egypt' Halo_Country,
+select cast(product_id as string) product_id,variantid,'Lazurde_UAE' Halo_Country,
 * except(product_id,variantid)
 from(
 select
@@ -117,25 +117,25 @@ address.country_id,
 
 --
 user_id.user_info as userid
-from `noted-computing-279322.halo_1_1_lazurdeEgypt.magento_transaction` as ord
-left join `noted-computing-279322.halo_1_1_lazurdeEgypt.magento_transaction_details` item
+from `noted-computing-279322.halo_1_1_lazurdeUAE.magento_transaction` as ord
+left join `noted-computing-279322.halo_1_1_lazurdeUAE.magento_transaction_details` item
 on ord.entity_id=item.order_id
-left join `noted-computing-279322.halo_1_1_lazurdeEgypt.refOrderStatus` os
+left join `noted-computing-279322.halo_1_1_lazurdeUAE.refOrderStatus` os
 on ord.status=os.orderstatus
-left join `noted-computing-279322.halo_1_1_lazurdeEgypt.magento_payment` pay
+left join `noted-computing-279322.halo_1_1_lazurdeUAE.magento_payment` pay
 on ord.entity_id=pay.parent_id
 
 -- left join
 -- `noted-computing-279322.halo_1_1_lazurdeEgypt.refProducts` pro
 -- on cast(item.product_id as string)=pro.product_id
 left join
-`noted-computing-279322.halo_1_1_lazurdeEgypt.refUsers` user_id
+`noted-computing-279322.halo_1_1_lazurdeUAE.refUsers` user_id
 on ord.customer_email=user_id.user_info
 left join
-`noted-computing-279322.halo_1_1_lazurdeEgypt.magento_orderhist` stathist
+`noted-computing-279322.halo_1_1_lazurdeUAE.magento_orderhist` stathist
 on ord.entity_id=stathist.parent_id
 left join
-`noted-computing-279322.halo_1_1_lazurdeEgypt.magento_address` address
+`noted-computing-279322.halo_1_1_lazurdeUAE.magento_address` address
 on ord.entity_id=address.parent_id
 )
 
@@ -147,7 +147,7 @@ on ord.entity_id=address.parent_id
 where product_price>=0
 ) st
 left join
-`noted-computing-279322.halo_1_1_lazurdeEgypt.fGATransactions` ga
+`noted-computing-279322.halo_1_1_lazurdeUAE.fGATransactions` ga
 on st.increment_id= ga.order_id
 left join
 `noted-computing-279322.halo_1_1.refExchangerate` ex
@@ -160,10 +160,10 @@ on st.country_id=country.CountryCode
 )
 )forders1
 left join
-(select distinct lower(code) as influencerscode from `noted-computing-279322.halo_1_1_lazurdeEgypt.magento_influencerscode` where Currency = 'SAR')coupon
+(select distinct lower(code) as influencerscode from `noted-computing-279322.halo_1_1_lazurdeUAE.magento_influencerscode` where Currency = 'SAR')coupon
 on forders1.coupon_code=coupon.influencerscode)where order_date > '2020-05-05' )
 ) a
 -- ))
 left join
-`noted-computing-279322.halo_1_1_lazurdeEgypt.fproducts` prd
+`noted-computing-279322.halo_1_1_lazurdeUAE.fproducts` prd
 on  a.product_id = cast(prd.product_id as string)

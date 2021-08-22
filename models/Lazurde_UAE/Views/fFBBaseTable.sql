@@ -10,4 +10,4 @@ WHERE row_number = 1
 )
 
     )
-where country  = 'KSA'
+where country  = 'UAE'

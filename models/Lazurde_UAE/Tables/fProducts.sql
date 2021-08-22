@@ -13,7 +13,7 @@ select distinct cpe.entity_id as product_id, cpe.created_at,
     where attribute_id = 97 and value = 1)
     then 'Active' else 'Inactive' end) as SKU_status,
   (case when lower(categories_brand.category) like '%gold%'  then  'Gold'
-    when  lower(categories_brand.category) like '%l%azurde%diamonds%' then 'Lazurde Diamonds'
+    when  lower(categories_brand.category) like '%l%azurde%diamond%' then 'Lazurde Diamonds'
     when  lower(categories_brand.category) like '%miss%l%' then 'MissL'
     when  lower(categories_brand.category) like '%instyle%' then 'Lazurde Instyle'
     when  lower(categories_brand.category) like '%kenaz%' then 'Kenaz'
@@ -94,7 +94,7 @@ left join
       on ccev.entity_id = cce.entity_id
       where cce.level=2  and ccev.attribute_id = 45
         and (lower(ccev.value) in ('kenaz', 'gold') or lower(ccev.value) like '%miss%l%' or
-             lower(ccev.value) like '%instyle%' or lower(ccev.value) like '%l%azurde%diamonds%') or
+             lower(ccev.value) like '%instyle%' or lower(ccev.value) like '%l%azurde%diamond%') or
              lower(ccev.value) like '%free%gift%' )cats
 --     group by entity_id
     ) categories_brand
@@ -105,5 +105,5 @@ left join (SELECT * except(row_number)
           WHERE row_number = 1) ciss
 on cpe.entity_id = ciss.product_id
 where cpev.attribute_id =  73 and cpev.store_id = 0
-and cpw.website_id = 1
+and cpw.website_id = 3
 order by cpe.entity_id
