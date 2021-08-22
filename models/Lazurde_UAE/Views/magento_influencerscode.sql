@@ -26,5 +26,5 @@ code,
 updated_date,
 __sdc_spreadsheet_id
 from `noted-computing-279322.lazurde_influencers_affiliates.Influencer_Codes`
-where lower(country__ksa_egypt_) = 'egypt'
+where lower(country__ksa_egypt_) = 'uae'
 or lower(country__ksa_egypt_) = 'both'
