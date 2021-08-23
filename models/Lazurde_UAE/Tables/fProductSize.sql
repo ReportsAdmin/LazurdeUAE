@@ -2,7 +2,7 @@ select date(tr.created_at) order_date,cast(trd.Product_ID as string) Product_id,
        count(distinct trd.order_id) Orders,
        sum(trd.base_row_total) as total_item_price,
        sum(qty_ordered) Units,
-       'Lazurde_UAR' Halo_Country
+       'Lazurde_UAE' Halo_Country
 from
 `noted-computing-279322.halo_1_1_lazurdeUAE.magento_transaction_details` trd
 left join

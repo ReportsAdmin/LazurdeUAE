@@ -1,5 +1,5 @@
 select *
-from (select *,row_number() over (partition by category_L2 order by AverageRev desc) DesiredPositioning,'Lazurde_UAR' Halo_Country
+from (select *,row_number() over (partition by category_L2 order by AverageRev desc) DesiredPositioning,'Lazurde_UAE' Halo_Country
         from(select a.*,safe_divide(Revenue,30) AverageRev,activationdate.activation_date
                           from (select a.*,c.CatlogSequence
                                 from (select distinct product_id,

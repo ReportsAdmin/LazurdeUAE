@@ -1,7 +1,7 @@
 
 select row_number() over() order_status_id,*,
       cast(case when order_status_detail in ('successful') then 1 else 0 end as boolean) Is_Successful_Order,
-      'Lazurde_UAR' Halo_Country
+      'Lazurde_UAE' Halo_Country
 from (
 select orderstatus,
 case orderstatus

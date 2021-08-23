@@ -1,4 +1,4 @@
-select * except(ranki) ,'Lazurde_UAR' Halo_Country
+select * except(ranki) ,'Lazurde_UAE' Halo_Country
 from
 (select *,rank() over (partition by user_info order by userid desc) ranki from(
 select activateddate,	user_info,	cast(userid as string) userid

@@ -1,4 +1,4 @@
-(select * ,'Lazurde_UAR' Halo_Country,
+(select * ,'Lazurde_UAE' Halo_Country,
        concat(format_date('%d %b %y',Startdate),' - ',format_date('%d %b %y',Startdate + 6)) DateRange
 
 from

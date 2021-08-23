@@ -1,4 +1,4 @@
-select *,row_number() over (partition by user_id order by cnt_orders desc) disc_cat_rank,'Lazurde_UAR' Halo_Country
+select *,row_number() over (partition by user_id order by cnt_orders desc) disc_cat_rank,'Lazurde_UAE' Halo_Country
 from(
 
 select user_id,disc_cat_id,count(distinct order_item_id) cnt_orders,min(order_date) date_start,max(order_date) date_stop

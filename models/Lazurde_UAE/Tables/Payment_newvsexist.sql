@@ -1,5 +1,5 @@
 select method,date,count(distinct new_cust_pay)new_cust_pay,
-count(distinct Exist_cust_pay)Exist_cust_pay,'Lazurde_UAR' Halo_Country from
+count(distinct Exist_cust_pay)Exist_cust_pay,'Lazurde_UAE' Halo_Country from
 (select method,date,case when ranki=1 then a.entity_id end as new_cust_pay,
 case when ranki>1 then a.entity_id end as Exist_cust_pay
 from

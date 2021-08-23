@@ -34,7 +34,7 @@ select *,
 --            case when Type in ('Direct','Offline','Organic','Referral','others') then 'UnPaid'
 --               else 'Paid' end Paid_NonPaid,
 
-              'Lazurde_UAR' Halo_Country,
+              'Lazurde_UAE' Halo_Country,
               split(source_medium ,'/')[safe_ordinal(1)] ChannelSource,
               split(source_medium ,'/')[safe_ordinal(2)] ChannelMedium,
               CASE When is_google_ad_source=true then 'GoogleCampaign'

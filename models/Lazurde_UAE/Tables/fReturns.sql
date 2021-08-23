@@ -1,6 +1,6 @@
 select OrderId  ,cast(RefundStatus as string) RefundStatus,	cast(ReturnReason as string) ReturnReason,
      cast(ReturnRequestID as string) ReturnRequestID,cast(ReturnStatus as string) ReturnStatus,	cast(userId as string) userId,
-     'Lazurde_UAR' Halo_Country
+     'Lazurde_UAE' Halo_Country
 
 from(
 

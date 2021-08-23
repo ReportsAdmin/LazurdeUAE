@@ -1,4 +1,4 @@
-select *,row_number() over (partition by user_id order by orders desc,revenue desc) channel_rank,'Lazurde_UAR' Halo_Country
+select *,row_number() over (partition by user_id order by orders desc,revenue desc) channel_rank,'Lazurde_UAE' Halo_Country
 from(
 (
 select user_id,channel_id,

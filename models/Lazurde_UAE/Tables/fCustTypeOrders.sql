@@ -1,7 +1,7 @@
 select date_start,sum(case when order_by_custtype='Active' then Orders else 0 end) as Active,
                   sum(case when order_by_custtype='Lapsed' then Orders else 0 end) as Lapsed,
                   sum(case when order_by_custtype='Churned' then Orders else 0 end) as Churned,
-                  'Lazurde_UAR' Halo_Country
+                  'Lazurde_UAE' Halo_Country
 from
 (
 select date_start,order_by_custtype,count(distinct order_id) Orders

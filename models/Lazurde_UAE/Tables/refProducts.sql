@@ -25,7 +25,7 @@ from
 --          when category_L1='Gold' then 3
 --          else 4
 --          end  as string) category_L1_id,
-         'Lazurde_UAR' Halo_Country
+         'Lazurde_UAE' Halo_Country
 
 
  from(

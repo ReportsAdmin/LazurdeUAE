@@ -1,4 +1,4 @@
-select safe_divide(PaymentPage,Transaction) payment_trnx ,D_ga_deviceCategory,StartDate,'Lazurde_UAR' Halo_Country from(
+select safe_divide(PaymentPage,Transaction) payment_trnx ,D_ga_deviceCategory,StartDate,'Lazurde_UAE' Halo_Country from(
 select sum(case when  D_ga_shoppingStage = "TRANSACTION" then M_ga_sessions else 0 end) as Transaction,
 sum(case when D_ga_shoppingStage = "CHECKOUT_5" then M_ga_sessions else 0 end) as PaymentPage,D_ga_deviceCategory,StartDate from (
 

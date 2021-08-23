@@ -1,4 +1,4 @@
-select *,row_number() over (partition by category_L1 order by RevPerImpression desc) DesiredPositioning,'Lazurde_UAR' Halo_Country
+select *,row_number() over (partition by category_L1 order by RevPerImpression desc) DesiredPositioning,'Lazurde_UAE' Halo_Country
 from(
 select distinct * from (
 select a.*,b.product_title,b.product_sku,b.category_L1,c.CatlogSequence,safe_divide(Revenue,Impressions) RevPerImpression

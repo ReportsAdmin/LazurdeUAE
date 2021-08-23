@@ -1,4 +1,4 @@
-select cal.date,a.FB_M_ga_uniqueEvents,G_M_ga_uniqueEvents,L_M_ga_uniqueEvents ,'Lazurde_UAR' Halo_Country from
+select cal.date,a.FB_M_ga_uniqueEvents,G_M_ga_uniqueEvents,L_M_ga_uniqueEvents ,'Lazurde_UAE' Halo_Country from
 (select Date from `noted-computing-279322.halo_1_1_lazurdeUAE.Calendar` )cal
 left join
 (select distinct StartDate,sum(cast(M_ga_uniqueEvents as int64)) FB_M_ga_uniqueEvents

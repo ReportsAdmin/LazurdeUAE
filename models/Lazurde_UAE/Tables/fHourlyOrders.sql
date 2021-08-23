@@ -1,6 +1,6 @@
 select *,Round((PrevWeekOrders+Prev2WeekOrders+Prev3WeekOrders)/3) Prev_3Weeks_AVg_Orders,
         Round((PrevWeekRevenue+Prev2WeekRevenue+Prev3WeekRevenue)/3) Prev_3Weeks_AVg_Revenue,
-        'Lazurde_UAR' Halo_Country
+        'Lazurde_UAE' Halo_Country
 from
 (
 

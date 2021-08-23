@@ -1,6 +1,6 @@
 select *except(rank) from (
 select *,row_number() over(partition by product_id order by image desc) rank from (
-select cast(entity_id as string) as Product_id,concat(value,'catalog/product',val) as Image,'Lazurde_UAR' Halo_Country from(
+select cast(entity_id as string) as Product_id,concat(value,'catalog/product',val) as Image,'Lazurde_UAE' Halo_Country from(
 select * from
 (select value,'1' joinvalue from  `noted-computing-279322.halo_1_1_lazurdeUAE.magento_Image1`
 where config_id=66 )a

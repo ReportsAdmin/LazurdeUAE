@@ -1,4 +1,4 @@
-select *,'Lazurde_UAR' Halo_Country from
+select *,'Lazurde_UAE' Halo_Country from
 (
        
                 select
