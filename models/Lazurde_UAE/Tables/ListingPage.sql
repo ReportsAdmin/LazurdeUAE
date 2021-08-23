@@ -1,6 +1,6 @@
 select *,
 case when lower(D_ga_landingPagePath) like '%/necklaces%' then 'Necklaces' when lower(D_ga_landingPagePath) like '%/earings%' then 'Earrings'  when lower(D_ga_landingPagePath) like '%/rings%' then 'Rings' when lower(D_ga_landingPagePath) like '%/bracelets%' then 'Bracelets'
- when lower(D_ga_landingPagePath) like '%/anklets%' then 'Anklets' when lower(D_ga_landingPagePath) like '%/lady-fozaza%' then 'Lady Fozaza' when lower(D_ga_landingPagePath) like '%/shop-all%' then 'Shop All' when lower(D_ga_landingPagePath) like '%/offer%' then 'Offer' when lower(D_ga_landingPagePath) like '%/new-arrival%' then 'New Arrival' when lower(D_ga_landingPagePath) like '%/gif%' then 'Gift' else 'OTHERS'  end as cat,'Lazurde_UAR' Halo_Country from(
+ when lower(D_ga_landingPagePath) like '%/anklets%' then 'Anklets' when lower(D_ga_landingPagePath) like '%/lady-fozaza%' then 'Lady Fozaza' when lower(D_ga_landingPagePath) like '%/shop-all%' then 'Shop All' when lower(D_ga_landingPagePath) like '%/offer%' then 'Offer' when lower(D_ga_landingPagePath) like '%/new-arrival%' then 'New Arrival' when lower(D_ga_landingPagePath) like '%/gif%' then 'Gift' else 'OTHERS'  end as cat,'Lazurde_UAE' Halo_Country from(
 
 select 
 sum(cast(M_ga_pageviews as int64)) as impressions,

@@ -1,6 +1,6 @@
 select *,case when Type in ('Direct','Offline','Organic','Referral','others') then 'Non Paid'
               else 'Paid' end Paid_NonPaid,
-              'Lazurde_UAR' Halo_Country
+              'Lazurde_UAE' Halo_Country
 from 
 (
 select *,case when Publisher in ('Direct') then 'Direct'

@@ -1,4 +1,4 @@
-select ord.*, fulfil.time_to_fulfill, deliv.Delivered_quantity, deliv.Delivered_Orders, 'Lazurde_UAR' Halo_Country from
+select ord.*, fulfil.time_to_fulfill, deliv.Delivered_quantity, deliv.Delivered_Orders, 'Lazurde_UAE' Halo_Country from
 (
 --- Overall,SUccessful,cancelled orders
 (Select

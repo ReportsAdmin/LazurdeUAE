@@ -1,6 +1,6 @@
 select parse_date("%Y%m%d",D_ga_date) start_date,
 a.D_ga_transactionId order_id,b.ad_cat_id,b.is_ad_order,b.Paid_NonPaid,D_ga_deviceCategory DeviceCategory,
-'Lazurde_UAR' Halo_Country
+'Lazurde_UAE' Halo_Country
 from
     (
 SELECT * except(row_number)

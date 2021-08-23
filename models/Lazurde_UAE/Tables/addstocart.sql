@@ -1,4 +1,4 @@
-select cal.date,Prodaddstocart,Navaddstocart,'Lazurde_UAR' Halo_Country from
+select cal.date,Prodaddstocart,Navaddstocart,'Lazurde_UAE' Halo_Country from
 (select date from `noted-computing-279322.halo_1_1_lazurdeUAE.Calendar` )cal
 
 left join

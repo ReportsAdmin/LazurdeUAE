@@ -1,5 +1,5 @@
 select visitors.date_start,visitors.visitors,visitors.Bounce,users.registered_users,new_visitors.new_visitors,firstpurchases.FirstPurchases ,
-       'Lazurde_UAR' Halo_Country
+       'Lazurde_UAE' Halo_Country
 from
 (select sum(cast(M_ga_users as int64)) as visitors,sum(Bounces) Bounce,startdate date_start from(
 select *,(cast(M_ga_sessions as float64)*cast(M_ga_bounceRate as float64))/100 Bounces from `noted-computing-279322.halo_1_1_lazurdeUAE.fGABaseVisitors`

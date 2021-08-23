@@ -1,5 +1,5 @@
 select * from (
-select distinct entity_id Productid,attribute	AttributeName,value1 as Value ,'Lazurde_UAR' Halo_Country from
+select distinct entity_id Productid,attribute	AttributeName,value1 as Value ,'Lazurde_UAE' Halo_Country from
 
 (select a.entity_id,a.attribute_set_id,a.type_id,a.sku, b.attribute_id, b.frontend_label as attribute,
 b.attribute_code, av.value as av_value,av.store_id as av_store_id, ao.value as value1, ao.value_id,ao.store_id

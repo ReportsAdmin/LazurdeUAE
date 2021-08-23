@@ -1,4 +1,4 @@
-select row_number() over() channel_id,channel,'Lazurde_UAR' Halo_Country
+select row_number() over() channel_id,channel,'Lazurde_UAE' Halo_Country
 from
 (
 select distinct source_medium channel

@@ -1,4 +1,4 @@
-select a.user_id,b.cust_segment_id,a.is_active,a.is_lapsed,a.is_churned,a.First_pur_date,a.last_pur_date,'Lazurde_UAR' Halo_Country
+select a.user_id,b.cust_segment_id,a.is_active,a.is_lapsed,a.is_churned,a.First_pur_date,a.last_pur_date,'Lazurde_UAE' Halo_Country
 from
 (select user_id,
             case

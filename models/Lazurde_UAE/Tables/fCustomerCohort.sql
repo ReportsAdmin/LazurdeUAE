@@ -1,5 +1,5 @@
 select p.*,ifnull(q.Cust,0) Cust,ifnull(q.orders,0) orders,ifnull(q.Revenue,0) Revenue,ifnull(q.Value,0) Value,
-       'Lazurde_UAR' Halo_Country
+       'Lazurde_UAE' Halo_Country
 from
 (select x.*,y.cust_total
 from
@@ -32,7 +32,7 @@ on x.AcquisitionDate=y.AcquisitionDate
 left join
 
 
-(select *,'Lazurde_UAR' Halo_Country
+(select *,'Lazurde_UAE' Halo_Country
 from(
 select a.*,b.Cust as cust_total, (a.Cust/b.Cust) as Value,'Retention Rate' Type
 from

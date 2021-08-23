@@ -1,4 +1,4 @@
-select a.product_id,a.date_start,a.date_stop,b.product_segment_id,'Lazurde_UAR' Halo_Country
+select a.product_id,a.date_start,a.date_stop,b.product_segment_id,'Lazurde_UAE' Halo_Country
 from
 (select product_id,case when Percentile_Orders =10 then 'Top Selling'
                        when Percentile_Impressions=2 and Percentile_CTR=1 and Percentile_CDR=1 and Percentile_BDR=1 then 'Unpopular'

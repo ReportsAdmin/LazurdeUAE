@@ -1,5 +1,5 @@
 select * from (
-select e.*, f.category_L1_id ,'Lazurde_UAR' Halo_Country
+select e.*, f.category_L1_id ,'Lazurde_UAE' Halo_Country
 from
 (select c.*,d.disc_cat_id from
 (select a.*, b.channel_id from

@@ -1,4 +1,4 @@
-select *,row_number() over (partition by user_id order by orders desc,revenue desc) Productcategory_rank,'Lazurde_UAR' Halo_Country
+select *,row_number() over (partition by user_id order by orders desc,revenue desc) Productcategory_rank,'Lazurde_UAE' Halo_Country
 from(
 select  user_id,category_L1_id,count(distinct order_id) orders,sum(total_item_price) revenue,min(order_date) date_start,max(order_date) date_stop
 from

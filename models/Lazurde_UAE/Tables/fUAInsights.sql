@@ -7,7 +7,7 @@ cast(a.M_ga_productAddsToCart as float64) Addtocarts,
 cast(a.M_ga_avgPageLoadTime as float64) avgPageLoadTime ,
 cast(a.M_ga_bounceRate as float64) bounceRate,
 b.ad_cat_id,b.Paid_NonPaid,b.is_ad_order,
-'Lazurde_UAR' Halo_Country
+'Lazurde_UAE' Halo_Country
 from
 `noted-computing-279322.halo_1_1_lazurdeUAE.fGABaseCosts` a,
 `noted-computing-279322.halo_1_1_lazurdeUAE.refKeywords` b

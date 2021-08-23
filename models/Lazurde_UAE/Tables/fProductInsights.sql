@@ -1,5 +1,5 @@
 select * from (
-select * ,'Lazurde_UAR' Halo_Country
+select * ,'Lazurde_UAE' Halo_Country
 from(
 select
 a.date_start,
