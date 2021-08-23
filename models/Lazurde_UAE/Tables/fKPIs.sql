@@ -12,8 +12,9 @@ from
 select
 Halo_country,
 KPI,
-period_flag as XTD,
 period_id date,
+period_flag as XTD,
+
 ifnull(Value,0) Value,
 
 ifnull(lag(Value,1) over (partition by Halo_country,KPI,period_flag order by period_id),0) prevvalue,
@@ -8680,8 +8681,9 @@ from
 select
 Halo_country,
 KPI,
-period_flag as XTD,
 period_id date,
+period_flag as XTD,
+
 ifnull(Value,0) Value,
 
 ifnull(lag(Value,1) over (partition by Halo_country,KPI,period_flag order by period_id),0) prevvalue,
@@ -8859,3 +8861,4 @@ and coalesce(date,dateweek,datemonth,datequarter,dateyear) is not null
 ) ta,
 `noted-computing-279322.halo_1_1_lazurdeUAE.refKPI` tb
 where ta.KPI = tb.KPI_VARIABLE
+
