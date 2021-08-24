@@ -29,7 +29,7 @@ max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_D
 
 
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 --and PARSE_DATE('%Y%m%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), WEEK), INTERVAL 1 DAY), WEEK) and current_date()
 group by Halo_country, KPI
@@ -54,7 +54,7 @@ max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUN
 min(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_DATE(),MONTH),INTERVAL 1 YEAR) and DATE_SUB(CURRENT_DATE(),INTERVAL 1 YEAR) then date else null end) PrevYearX_Startdate,
 max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_DATE(),MONTH),INTERVAL 1 YEAR) and DATE_SUB(CURRENT_DATE(),INTERVAL 1 YEAR) then date else '0' end) PrevYearX_Enddate
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 -- and PARSE_DATE('%Y%m%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 2 DAY), MONTH) and current_date()
 group by Halo_country, KPI
@@ -82,7 +82,7 @@ max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_D
 
 
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 --and PARSE_DATE('%Y%m%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), QUARTER), INTERVAL 1 DAY), QUARTER) and current_date()
 group by Halo_country, KPI
@@ -107,7 +107,7 @@ min(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_D
 max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_DATE(),YEAR),INTERVAL 1 YEAR) and DATE_SUB(CURRENT_DATE(),INTERVAL 1 YEAR) then date else '0' end) PrevYearX_Enddate
 
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 -- and PARSE_DATE('%Y-%m-%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), YEAR), INTERVAL 1 DAY), YEAR) and current_date()
 group by Halo_country, KPI
@@ -149,7 +149,7 @@ max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_D
 
 
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 --and PARSE_DATE('%Y%m%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), WEEK), INTERVAL 1 DAY), WEEK) and current_date()
 group by Halo_country, KPI
@@ -174,7 +174,7 @@ max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUN
 min(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_DATE(),MONTH),INTERVAL 1 YEAR) and DATE_SUB(CURRENT_DATE(),INTERVAL 1 YEAR) then date else null end) PrevYearX_Startdate,
 max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_DATE(),MONTH),INTERVAL 1 YEAR) and DATE_SUB(CURRENT_DATE(),INTERVAL 1 YEAR) then date else '0' end) PrevYearX_Enddate
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 -- and PARSE_DATE('%Y%m%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), MONTH), INTERVAL 2 DAY), MONTH) and current_date()
 group by Halo_country, KPI
@@ -202,7 +202,7 @@ max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_D
 
 
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 --and PARSE_DATE('%Y%m%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), QUARTER), INTERVAL 1 DAY), QUARTER) and current_date()
 group by Halo_country, KPI
@@ -227,7 +227,7 @@ min(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_D
 max(case when PARSE_DATE('%Y-%m-%d', date) between DATE_SUB(DATE_TRUNC(CURRENT_DATE(),YEAR),INTERVAL 1 YEAR) and DATE_SUB(CURRENT_DATE(),INTERVAL 1 YEAR) then date else '0' end) PrevYearX_Enddate
 
 
-from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs`
+from `noted-computing-279322.halo_1_1_lazurdeUAE.fKPIs_tab`
 where XTD = 'Day'
 -- and PARSE_DATE('%Y-%m-%d', date) between DATE_TRUNC(DATE_SUB(DATE_TRUNC(CURRENT_DATE(), YEAR), INTERVAL 1 DAY), YEAR) and current_date()
 group by Halo_country, KPI
