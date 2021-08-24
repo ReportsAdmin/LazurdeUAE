@@ -357,6 +357,5 @@ group by Halo_country, KPI
 ) ta,
 `noted-computing-279322.halo_1_1_lazurdeUAE.refKPI` tb
 where ta.KPI = tb.KPI_VARIABLE
-and lower(ta.KPI) in ('sku_less_than_three', 'sku_more_than_six', 'sku_more_than_three')
 
 
